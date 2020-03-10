@@ -1,19 +1,19 @@
 {
   "files": {
-    "static/js/1.chunk.js": "/portalydev/wp-content/themes/portaly_react_theme/static/js/1.chunk.js",
-    "static/js/1.chunk.js.map": "/portalydev/wp-content/themes/portaly_react_theme/static/js/1.chunk.js.map",
-    "main.css": "/portalydev/wp-content/themes/portaly_react_theme/static/css/main.chunk.css",
-    "main.js": "/portalydev/wp-content/themes/portaly_react_theme/static/js/main.chunk.js",
-    "main.css.map": "/portalydev/wp-content/themes/portaly_react_theme/static/css/main.chunk.css.map",
-    "main.js.map": "/portalydev/wp-content/themes/portaly_react_theme/static/js/main.chunk.js.map",
-    "runtime-main.js": "/portalydev/wp-content/themes/portaly_react_theme/static/js/bundle.js",
-    "runtime-main.js.map": "/portalydev/wp-content/themes/portaly_react_theme/static/js/bundle.js.map",
-    "index.php": "/portalydev/wp-content/themes/portaly_react_theme/index.php",
-    "static/media/logo.svg": "/portalydev/wp-content/themes/portaly_react_theme/static/media/logo.5d5d9eef.svg"
+    "static/js/0.chunk.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js",
+    "static/js/0.chunk.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js.map",
+    "main.css": "/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css",
+    "main.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js",
+    "main.css.map": "/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css.map",
+    "main.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js.map",
+    "runtime-main.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js",
+    "runtime-main.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js.map",
+    "index.php": "/portalydev/wp-content/themes/portaly-react-theme/index.php",
+    "static/media/logo.svg": "/portalydev/wp-content/themes/portaly-react-theme/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/bundle.js",
-    "static/js/1.chunk.js",
+    "static/js/0.chunk.js",
     "static/css/main.chunk.css",
     "static/js/main.chunk.js"
   ]

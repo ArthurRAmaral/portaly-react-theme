@@ -12,7 +12,7 @@
 <script> wpThemeClient.start("ws", "127.0.0.1", "8090"); </script>
 
 <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/portalydev/wp-content/themes/portaly_react_theme/favicon.ico" />
+    <link rel="shortcut icon" href="/portalydev/wp-content/themes/portaly-react-theme/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -29,17 +29,17 @@
         If you're reading this from "view source" in your browser, it might not make sense as
         these tokens have already been evaluated and replaced, even in this remark blurb.
 
-        Notice the use of "php echo $TEMPLATE_PATH;" and /portalydev/wp-content/themes/portaly_react_theme in the tags above.
-        Both will be replaced with the URL of the `public` folder during the build (/portalydev/wp-content/themes/portaly_react_theme) or
+        Notice the use of "php echo $TEMPLATE_PATH;" and /portalydev/wp-content/themes/portaly-react-theme in the tags above.
+        Both will be replaced with the URL of the `public` folder during the build (/portalydev/wp-content/themes/portaly-react-theme) or
         at render time (php echo $TEMPLATE_PATH;)
         Only files inside the `public` folder can be referenced like this.
 
-        Unlike "/favicon.ico" or "favicon.ico", "/portalydev/wp-content/themes/portaly_react_theme/favicon.ico" will
+        Unlike "/favicon.ico" or "favicon.ico", "/portalydev/wp-content/themes/portaly-react-theme/favicon.ico" will
         work correctly both with client-side routing and a non-root public URL.
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/portalydev/wp-content/themes/portaly_react_theme/static/css/main.chunk.css?d0562a619c460950fc8c" rel="stylesheet"></head>
+<link href="/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css?35849c7ca4bcec0128f3" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/portalydev/wp-content/themes/portaly_react_theme/static/js/bundle.js?d0562a619c460950fc8c"></script><script src="/portalydev/wp-content/themes/portaly_react_theme/static/js/1.chunk.js?d0562a619c460950fc8c"></script><script src="/portalydev/wp-content/themes/portaly_react_theme/static/js/main.chunk.js?d0562a619c460950fc8c"></script></body>
+    <script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js?35849c7ca4bcec0128f3"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js?35849c7ca4bcec0128f3"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js?35849c7ca4bcec0128f3"></script></body>
 </html>
