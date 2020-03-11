@@ -139,7 +139,7 @@ _serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/logo.5d5d9eef.svg";
+module.exports = __webpack_require__.p + "static/media/logo.ee7cd8ed.svg";
 
 /***/ }),
 
