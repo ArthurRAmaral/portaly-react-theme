@@ -657,14 +657,14 @@ class HomePage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
     this.aguardandoProdutos = () => {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "progress",
+        className: "deep-orange progress",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "indeterminate",
+        className: "deep-orange darken-3 indeterminate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
@@ -891,5 +891,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\portalydev\wp-content\t
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map
