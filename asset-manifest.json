@@ -1,6 +1,8 @@
 {
   "files": {
+    "static/css/0.chunk.css": "/portalydev/wp-content/themes/portaly-react-theme/static/css/0.chunk.css",
     "static/js/0.chunk.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js",
+    "static/css/0.chunk.css.map": "/portalydev/wp-content/themes/portaly-react-theme/static/css/0.chunk.css.map",
     "static/js/0.chunk.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js.map",
     "main.css": "/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css",
     "main.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js",
@@ -8,11 +10,11 @@
     "main.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js.map",
     "runtime-main.js": "/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js",
     "runtime-main.js.map": "/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js.map",
-    "index.php": "/portalydev/wp-content/themes/portaly-react-theme/index.php",
-    "static/media/logo.svg": "/portalydev/wp-content/themes/portaly-react-theme/static/media/logo.ee7cd8ed.svg"
+    "index.php": "/portalydev/wp-content/themes/portaly-react-theme/index.php"
   },
   "entrypoints": [
     "static/js/bundle.js",
+    "static/css/0.chunk.css",
     "static/js/0.chunk.js",
     "static/css/main.chunk.css",
     "static/js/main.chunk.js"
