@@ -568,7 +568,7 @@ const Logo = () => {
     },
     __self: undefined
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://demo.skeavee.com/portaly/wp-content/uploads/2020/03/Portaly_PNG_Background.png",
+    src: "https://portaly.demo.skeavee.com/wp-content/uploads/2020/03/Portaly_PNG_Background.png",
     alt: "",
     className: "logo center-children",
     __source: {
@@ -1524,5 +1524,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\portalydev\wp-content\t
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map

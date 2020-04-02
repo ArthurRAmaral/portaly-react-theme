@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/portalydev/wp-content/themes/portaly-react-theme/";
+/******/ 	__webpack_require__.p = "/portaly-react-theme/";
 /******/
 /******/ 	var jsonpArray = this["webpackJsonpportaly_react_theme"] = this["webpackJsonpportaly_react_theme"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
