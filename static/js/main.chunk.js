@@ -1240,7 +1240,7 @@ class PaginaProduto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         className: "btn-floating halfway-fab waves-effect waves-light red",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -1248,27 +1248,27 @@ class PaginaProduto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         className: "material-icons",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         },
         __self: this
       }, "add"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 62
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 63
         },
         __self: this
       }, produto.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 64
         },
         __self: this
       }, produto.regular_price), produto.short_description !== "" ? produto.short_description.substring(3, produto.short_description.length - 5) : "")));
@@ -1290,7 +1290,7 @@ class PaginaProduto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       id: "produto-pagina",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 79
       },
       __self: this
     }, this.state.produto ? this.renderProduto() : Object(_components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_3__["default"])());
@@ -1524,5 +1524,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\portalydev\wp-content\t
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

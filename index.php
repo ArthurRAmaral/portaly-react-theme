@@ -39,7 +39,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/portalydev/wp-content/themes/portaly-react-theme/static/css/1.chunk.css?f5e1805f831ff1a19dde" rel="stylesheet"><link href="/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css?f5e1805f831ff1a19dde" rel="stylesheet"></head>
+<link href="/portalydev/wp-content/themes/portaly-react-theme/static/css/0.chunk.css?ca672e10486fa6576d35" rel="stylesheet"><link href="/portalydev/wp-content/themes/portaly-react-theme/static/css/main.chunk.css?ca672e10486fa6576d35" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js?f5e1805f831ff1a19dde"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/1.chunk.js?f5e1805f831ff1a19dde"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js?f5e1805f831ff1a19dde"></script></body>
+    <script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/bundle.js?ca672e10486fa6576d35"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/0.chunk.js?ca672e10486fa6576d35"></script><script src="/portalydev/wp-content/themes/portaly-react-theme/static/js/main.chunk.js?ca672e10486fa6576d35"></script></body>
 </html>
