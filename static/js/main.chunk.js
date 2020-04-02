@@ -1404,7 +1404,7 @@ function Routes() {
 __webpack_require__.r(__webpack_exports__);
 // const dev = "/portalydev";
 // export default dev;
-const padrao = "/portaly";
+const padrao = "";
 /* harmony default export */ __webpack_exports__["default"] = (padrao);
 
 /***/ }),
@@ -1421,9 +1421,9 @@ __webpack_require__.r(__webpack_exports__);
 const WooCommerceRestApi = __webpack_require__(/*! @woocommerce/woocommerce-rest-api */ "./node_modules/@woocommerce/woocommerce-rest-api/index.mjs").default;
 
 const Api = new WooCommerceRestApi({
-  url: "https://demo.skeavee.com/portaly/",
-  consumerKey: "ck_7b8470ceaba1db71afb0c3a77f7f1ea3f98b9ce0",
-  consumerSecret: "cs_de262070deb1bcf2a2911dfb08af5fa991407f5e",
+  url: "https://portaly.demo.skeavee.com/",
+  consumerKey: "ck_c6c63cd21931eb8a0bdfe7cca53cdffdc9a92e66",
+  consumerSecret: "cs_1af6f80c255cbe002dd3b2acbee69c87edc85934",
   version: "wc/v3"
 });
 /* harmony default export */ __webpack_exports__["default"] = (Api);
@@ -1524,5 +1524,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\portalydev\wp-content\t
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map
