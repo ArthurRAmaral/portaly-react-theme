@@ -12,11 +12,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! materialize-css/dist/css/materialize.min.css */ "./node_modules/materialize-css/dist/css/materialize.min.css");
-/* harmony import */ var materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Header */ "./src/components/Header.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/routes.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header/Header */ "./src/components/Header/Header.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes */ "./src/routes.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _util_Carrinho__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util/Carrinho */ "./src/util/Carrinho.js");
+/* harmony import */ var materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! materialize-css/dist/css/materialize.min.css */ "./node_modules/materialize-css/dist/css/materialize.min.css");
+/* harmony import */ var materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(materialize_css_dist_css_materialize_min_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _css_Global_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./css/Global.css */ "./src/css/Global.css");
+/* harmony import */ var _css_Global_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_css_Global_css__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\App.js";
 
 
@@ -25,36 +28,32 @@ var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-r
 
 
 
+
+
 const App = () => {
+  _util_Carrinho__WEBPACK_IMPORTED_MODULE_5__["default"].setCarrinho();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: undefined
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 16
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
     },
     __self: undefined
   }));
@@ -237,10 +236,88 @@ const Footer = () => {
 
 /***/ }),
 
-/***/ "./src/components/Header.js":
-/*!**********************************!*\
-  !*** ./src/components/Header.js ***!
-  \**********************************/
+/***/ "./src/components/Header/Busca.js":
+/*!****************************************!*\
+  !*** ./src/components/Header/Busca.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Busca; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\Busca.js";
+//From dependencies
+
+class Busca extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+
+    this.handleSubmit = event => {
+      window.location.href = `/?q=${this.state.value}`;
+      event.preventDefault(); // this.props.history.push(`/?q=${e.target.value}`);
+    };
+
+    this.handleChange = event => {
+      this.setState({
+        value: event.target.value
+      });
+    };
+
+    this.state = {
+      value: ""
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      onSubmit: this.handleSubmit,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "search-area",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      value: this.state.value,
+      onChange: this.handleChange,
+      id: "buscaInput",
+      className: "search-input",
+      placeholder: "Busque um produto",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/components/Header/Carrinho.js":
+/*!*******************************************!*\
+  !*** ./src/components/Header/Carrinho.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -248,75 +325,246 @@ const Footer = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_Header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Header.css */ "./src/css/Header.css");
-/* harmony import */ var _css_Header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_Header_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header.js";
+/* harmony import */ var _util_Carrinho__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/Carrinho */ "./src/util/Carrinho.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\Carrinho.js";
+//From dependencies
 
 
 
-const Headers = () => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sup-header blue-grey lighten-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Contato sup-header-content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
-  }, "Contato"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sup-header-content",
+const CarrinhoCompras = () => {
+  const valor = _util_Carrinho__WEBPACK_IMPORTED_MODULE_1__["default"].getValorCarrinho();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cart",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "Go-to-email",
-    href: "mailto:portalyportas@gmail.com",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "",
+    alt: "",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, "portalyportas@gmail.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Tel sup-header-content",
+  }), " Valor total:", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     },
     __self: undefined
-  }, "tel: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "tel:3125222915",
+  }, valor ? valor : 0));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CarrinhoCompras);
+
+/***/ }),
+
+/***/ "./src/components/Header/Categorias.js":
+/*!*********************************************!*\
+  !*** ./src/components/Header/Categorias.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/ApiWooCommerce */ "./src/util/ApiWooCommerce.js");
+/* harmony import */ var _services_InitPath__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/InitPath */ "./src/services/InitPath.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\Categorias.js";
+//From dependencies
+
+ //From utils
+
+
+
+
+const ApiCategories = categorias => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 12
     },
     __self: undefined
-  }, "(31) 2522-2915"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "main-header",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 13
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "center-content",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    exact: true,
+    key: `Todos`,
+    to: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_3__["default"]}/`,
+    activeStyle: {
+      backgroundColor: "#a1887f"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 14
+    },
+    __self: undefined
+  }, `Todos`)), categorias.map(cat => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: cat.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+      key: `categorias${cat.id}`,
+      to: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_3__["default"]}/categoria/${cat.id}`,
+      activeStyle: {
+        backgroundColor: "#a1887f"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: undefined
+    }, cat.name));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    key: `montesuaporta`,
+    to: `/montesuaporta`,
+    activeStyle: {
+      backgroundColor: "#a1887f"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, `Monte Sua Porta`)));
+};
+
+class Categorias extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      categories: []
+    };
+  }
+
+  componentDidMount() {
+    _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_2__["default"].getAllCategorias().then(res => {
+      this.setState({
+        categories: [...this.state.categories, ...res.data]
+      });
+    });
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, this.state.categories.length > 0 ? ApiCategories(this.state.categories) : "");
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Categorias);
+
+/***/ }),
+
+/***/ "./src/components/Header/Header.js":
+/*!*****************************************!*\
+  !*** ./src/components/Header/Header.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _TopHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TopHeader */ "./src/components/Header/TopHeader.js");
+/* harmony import */ var _MainHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MainHeader */ "./src/components/Header/MainHeader.js");
+/* harmony import */ var _css_Header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../css/Header.css */ "./src/css/Header.css");
+/* harmony import */ var _css_Header_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_Header_css__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\Header.js";
+//From dependencies
+ //From components
+
+
+
+
+
+class Headers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      className: "header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TopHeader__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MainHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    })));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Headers);
+
+/***/ }),
+
+/***/ "./src/components/Header/Logo.js":
+/*!***************************************!*\
+  !*** ./src/components/Header/Logo.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _services_InitPath__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/InitPath */ "./src/services/InitPath.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\Logo.js";
+//From dependencies
+
+
+
+
+const Logo = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_2__["default"]}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: undefined
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -325,203 +573,314 @@ const Headers = () => {
     className: "logo center-children",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 9
     },
     __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row",
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Logo);
+
+/***/ }),
+
+/***/ "./src/components/Header/MainHeader.js":
+/*!*********************************************!*\
+  !*** ./src/components/Header/MainHeader.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo */ "./src/components/Header/Logo.js");
+/* harmony import */ var _Busca__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Busca */ "./src/components/Header/Busca.js");
+/* harmony import */ var _Carrinho__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Carrinho */ "./src/components/Header/Carrinho.js");
+/* harmony import */ var _Categorias__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Categorias */ "./src/components/Header/Categorias.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\MainHeader.js";
+//From dependencies
+ //From components
+
+
+
+
+
+
+const MainHeader = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 12
     },
     __self: undefined
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "search-area",
+    className: "main-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 13
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "search-input",
-    placeholder: "Busque um produto",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "center-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 14
     },
     __self: undefined
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cart",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 15
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "",
-    alt: "",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Busca__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 16
     },
     __self: undefined
-  }), " Valor total: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    id: "value",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Carrinho__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 17
     },
     __self: undefined
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "menu brown darken-1",
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "menu brown darken-1 center-align",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 19
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Categorias__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 20
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Alizar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: undefined
-  }, "Alizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Dobradica",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: undefined
-  }, "Dobradi\xE7a")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Fechadura",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: undefined
-  }, "Fechadura")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#KitDeCorrer",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: undefined
-  }, "Kit de Correr")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Marco",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
-  }, "Marco (Batente)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Outros",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: undefined
-  }, "Outros")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Portas",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: undefined
-  }, "Porta")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Puxador",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: undefined
-  }, "Puxador")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#Monte",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: undefined
-  }, "Monte Sua Porta"))))));
+  }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Headers);
+/* harmony default export */ __webpack_exports__["default"] = (MainHeader);
+
+/***/ }),
+
+/***/ "./src/components/Header/TopHeader.js":
+/*!********************************************!*\
+  !*** ./src/components/Header/TopHeader.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\Header\\TopHeader.js";
+//From dependencies
+
+
+const TopHeader = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sup-header blue-grey lighten-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "Contato sup-header-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, "Contato"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sup-header-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "Go-to-email",
+    href: "mailto:portalyportas@gmail.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, "portalyportas@gmail.com", " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "Tel sup-header-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, "tel: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "tel:3125222915",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, "(31) 2522-2915")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TopHeader);
+
+/***/ }),
+
+/***/ "./src/components/MostraProdutos.js":
+/*!******************************************!*\
+  !*** ./src/components/MostraProdutos.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/imgDefault.png */ "./src/assets/imgDefault.png");
+/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _css_components_MostrarProdutos_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/components/MostrarProdutos.css */ "./src/css/components/MostrarProdutos.css");
+/* harmony import */ var _css_components_MostrarProdutos_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_components_MostrarProdutos_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _services_InitPath__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/InitPath */ "./src/services/InitPath.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\MostraProdutos.js";
+
+
+
+
+
+
+const MostrarProdutos = props => {
+  const cards = props.map(produto => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      className: "produto",
+      key: `link-to-${produto.id}`,
+      to: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_4__["default"]}/produto/${produto.id}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: " card small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      key: produto.id,
+      src: produto.images.length > 0 ? produto.images[0].src : _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+      alt: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: undefined
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "produto-dados",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "nome grey-text text-darken-4 ",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: undefined
+    }, produto.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "preco ",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: undefined
+    }, "R$: ", produto.price))));
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "row center-align produtos-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, cards);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MostrarProdutos);
+
+/***/ }),
+
+/***/ "./src/components/loading/LineLoading.js":
+/*!***********************************************!*\
+  !*** ./src/components/loading/LineLoading.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_Loading_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/Loading.css */ "./src/css/Loading.css");
+/* harmony import */ var _css_Loading_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_Loading_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\components\\loading\\LineLoading.js";
+
+
+
+const LineLoading = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "loading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "progress brown lighten-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "indeterminate brown darken-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LineLoading);
+
+/***/ }),
+
+/***/ "./src/css/Global.css":
+/*!****************************!*\
+  !*** ./src/css/Global.css ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -536,10 +895,10 @@ const Headers = () => {
 
 /***/ }),
 
-/***/ "./src/css/HomePage.css":
-/*!******************************!*\
-  !*** ./src/css/HomePage.css ***!
-  \******************************/
+/***/ "./src/css/Loading.css":
+/*!*****************************!*\
+  !*** ./src/css/Loading.css ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -551,6 +910,17 @@ const Headers = () => {
 /*!***********************************!*\
   !*** ./src/css/PaginaProduto.css ***!
   \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/css/components/MostrarProdutos.css":
+/*!************************************************!*\
+  !*** ./src/css/components/MostrarProdutos.css ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -576,13 +946,12 @@ var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-r
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __self: undefined,
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 17
-  }
+    lineNumber: 5
+  },
+  __self: undefined
 }), document.getElementById("root"));
 
 /***/ }),
@@ -596,107 +965,188 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomePage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/api */ "./src/services/api.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _css_HomePage_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/HomePage.css */ "./src/css/HomePage.css");
-/* harmony import */ var _css_HomePage_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_HomePage_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/imgDefault.png */ "./src/assets/imgDefault.png");
-/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/ApiWooCommerce */ "./src/util/ApiWooCommerce.js");
+/* harmony import */ var _components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/loading/LineLoading */ "./src/components/loading/LineLoading.js");
+/* harmony import */ var _components_MostraProdutos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/MostraProdutos */ "./src/components/MostraProdutos.js");
+/* harmony import */ var _util_Carrinho__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/Carrinho */ "./src/util/Carrinho.js");
 var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\pages\\HomePage.js";
 
 
 
 
 
+
 class HomePage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(...args) {
-    super(...args);
+  constructor(props) {
+    super(props);
     this.state = {
-      produtos: []
-    };
-
-    this.mostrarProdutos = () => {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        id: "produtos-list",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }, this.state.produtos.map(produto => {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          key: `link-to-${produto.id}`,
-          to: `/produto/${produto.id}`,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 28
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "produto",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 29
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          key: produto.id,
-          src: produto.images.length > 0 ? produto.images[0].src : _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-          alt: "",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30
-          },
-          __self: this
-        })));
-      }));
-    };
-
-    this.aguardandoProdutos = () => {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "deep-orange progress",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "deep-orange darken-3 indeterminate",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }));
+      produtos: [],
+      teste: []
     };
   }
 
-  async componentDidMount() {
-    const response = await _services_api__WEBPACK_IMPORTED_MODULE_1__["default"].get("products", {
-      per_page: 20 // 20 products per page
-
-    });
-    console.log(response.data);
-    this.setState({
-      produtos: response.data
+  componentDidMount() {
+    _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_1__["default"].getAll().then(res => {
+      let produtos = res.data;
+      this.setState({
+        produtos: [...this.state.produtos, ...produtos]
+      });
     });
   }
 
   render() {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-      id: "homepage",
+    _util_Carrinho__WEBPACK_IMPORTED_MODULE_4__["default"].setCarrinho();
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 30
       },
       __self: this
-    }, this.state.produtos.length > 0 ? this.mostrarProdutos() : this.aguardandoProdutos());
+    }, this.state.produtos.length > 0 ? Object(_components_MostraProdutos__WEBPACK_IMPORTED_MODULE_3__["default"])(this.state.produtos) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }));
   }
 
 }
+
+/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+/* <section id="destaques">
+          {this.state.produtos.map(produto => {
+            return produto.on_sale ? (
+              <div key={produto.id} className="produto">
+                <img src={produto.images[0].src} alt="" width={300} />
+              </div>
+            ) : (
+              <div></div>
+            );
+          })}
+        </section> */
+
+/***/ }),
+
+/***/ "./src/pages/MonteSuaPorta.js":
+/*!************************************!*\
+  !*** ./src/pages/MonteSuaPorta.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_Carrinho__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/Carrinho */ "./src/util/Carrinho.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\pages\\MonteSuaPorta.js";
+ // import ApiWooCommerce from "../util/ApiWooCommerce";
+// import LineLoaging from "../components/loading/LineLoading";
+
+
+
+class MonteSuaPorta extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      produtos: [],
+      paginaId: props.match.params.id
+    };
+  }
+
+  mostraMontagemPorta() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, "Montesuaporta");
+  }
+
+  render() {
+    _util_Carrinho__WEBPACK_IMPORTED_MODULE_1__["default"].setCarrinho();
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, this.mostraMontagemPorta());
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (MonteSuaPorta);
+
+/***/ }),
+
+/***/ "./src/pages/PaginaCategoria.js":
+/*!**************************************!*\
+  !*** ./src/pages/PaginaCategoria.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/ApiWooCommerce */ "./src/util/ApiWooCommerce.js");
+/* harmony import */ var _components_MostraProdutos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MostraProdutos */ "./src/components/MostraProdutos.js");
+/* harmony import */ var _components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/loading/LineLoading */ "./src/components/loading/LineLoading.js");
+/* harmony import */ var _util_Carrinho__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/Carrinho */ "./src/util/Carrinho.js");
+var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\pages\\PaginaCategoria.js";
+
+
+
+
+
+
+class PaginaCategorias extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      produtos: [],
+      paginaId: props.match.params.id
+    };
+  }
+
+  componentDidMount() {
+    this.chamaApiParaRceberProdutos(this.state.paginaId);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const id = nextProps.match.params.id;
+    this.chamaApiParaRceberProdutos(id);
+  }
+
+  chamaApiParaRceberProdutos(id) {
+    _util_ApiWooCommerce__WEBPACK_IMPORTED_MODULE_1__["default"].getCategoria(id).then(res => {
+      this.setState({
+        produtos: [...res.data],
+        paginaId: id
+      });
+    }).catch(console.log("Carregando"));
+  }
+
+  render() {
+    _util_Carrinho__WEBPACK_IMPORTED_MODULE_4__["default"].setCarrinho();
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, this.state.produtos.length > 0 && this.state.paginaId === this.props.match.params.id ? Object(_components_MostraProdutos__WEBPACK_IMPORTED_MODULE_2__["default"])(this.state.produtos) : Object(_components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_3__["default"])());
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (PaginaCategorias);
 
 /***/ }),
 
@@ -713,52 +1163,123 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/api */ "./src/services/api.js");
-/* harmony import */ var _css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/PaginaProduto.css */ "./src/css/PaginaProduto.css");
-/* harmony import */ var _css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/loading/LineLoading */ "./src/components/loading/LineLoading.js");
+/* harmony import */ var _css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/PaginaProduto.css */ "./src/css/PaginaProduto.css");
+/* harmony import */ var _css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_PaginaProduto_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/imgDefault.png */ "./src/assets/imgDefault.png");
+/* harmony import */ var _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\pages\\PaginaProduto.js";
 
- // import { Link, useParams } from "react-router-dom";
 
- // import imgDefault from "../assets/imgDefault.png";
+
+
+
 
 class PaginaProduto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(...args) {
     super(...args);
-    this.state = {// produto: undefined
+    this.state = {
+      produto: undefined,
+      opc: 0
     };
 
-    this.renderProduto = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, this.state.produto.name);
+    this.handleSubmit = e => {
+      // e.preventDefault();
+      const {
+        produto
+      } = this.state;
+      const carrinho = JSON.parse(localStorage.getItem("carrinho"));
+      carrinho.valor += Number.parseFloat(produto.price);
+      carrinho.itens.push({
+        id: produto.id,
+        preco: produto.price
+      });
+      console.log(carrinho);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      this.props.history.push("/");
+      window.location.reload();
+    };
 
-    this.aguardandoProduto = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "progress",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "indeterminate",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }));
+    this.renderProduto = () => {
+      const {
+        produto
+      } = this.state;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "produtomostrado s12 m6",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-image",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "principal",
+        src: produto.images.length > 0 ? produto.images[0].src : _assets_imgDefault_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+        alt: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "#",
+        className: "btn-floating halfway-fab waves-effect waves-light red",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        onClick: this.handleSubmit,
+        className: "material-icons",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, "add"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "card-content",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "card-title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }, produto.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }, produto.regular_price), produto.short_description !== "" ? produto.short_description.substring(3, produto.short_description.length - 5) : "")));
+    };
   }
 
   async componentDidMount() {
     const {
       id
     } = this.props.match.params;
-    console.log(id);
     const response = await _services_api__WEBPACK_IMPORTED_MODULE_1__["default"].get(`products/${id}`);
-    console.log(response.data);
     this.setState({
       produto: response.data
     });
@@ -769,16 +1290,10 @@ class PaginaProduto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       id: "produto-pagina",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 77
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, this.state.produto ? this.renderProduto() : this.aguardandoProduto()));
+    }, this.state.produto ? this.renderProduto() : Object(_components_loading_LineLoading__WEBPACK_IMPORTED_MODULE_3__["default"])());
   }
 
 }
@@ -798,10 +1313,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _pages_HomePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/HomePage */ "./src/pages/HomePage.js");
-/* harmony import */ var _pages_PaginaProduto__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/PaginaProduto */ "./src/pages/PaginaProduto.js");
+/* harmony import */ var _pages_PaginaCategoria__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/PaginaCategoria */ "./src/pages/PaginaCategoria.js");
+/* harmony import */ var _pages_PaginaProduto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/PaginaProduto */ "./src/pages/PaginaProduto.js");
+/* harmony import */ var _pages_MonteSuaPorta__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/MonteSuaPorta */ "./src/pages/MonteSuaPorta.js");
+/* harmony import */ var _services_InitPath__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/InitPath */ "./src/services/InitPath.js");
+/* harmony import */ var _css_Global_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./css/Global.css */ "./src/css/Global.css");
+/* harmony import */ var _css_Global_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_css_Global_css__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "C:\\xampp\\htdocs\\portalydev\\wp-content\\themes\\portaly-react-theme\\react-src\\src\\routes.js";
+//From dependencies
+
+ //From componets
 
 
+
+
+ //From util
+
+ //From css
 
 
 
@@ -809,30 +1337,75 @@ function Routes() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "homepage",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/",
+    path: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_6__["default"]}/`,
     exact: true,
     component: _pages_HomePage__WEBPACK_IMPORTED_MODULE_2__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/produto/:id",
-    component: _pages_PaginaProduto__WEBPACK_IMPORTED_MODULE_3__["default"],
+    path: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_6__["default"]}/categoria/:id`,
+    component: _pages_PaginaCategoria__WEBPACK_IMPORTED_MODULE_3__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 23
     },
     __self: this
-  }));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_6__["default"]}/produto/:id`,
+    component: _pages_PaginaProduto__WEBPACK_IMPORTED_MODULE_4__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: `${_services_InitPath__WEBPACK_IMPORTED_MODULE_6__["default"]}/montesuaporta`,
+    component: _pages_MonteSuaPorta__WEBPACK_IMPORTED_MODULE_5__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Routes);
+
+/***/ }),
+
+/***/ "./src/services/InitPath.js":
+/*!**********************************!*\
+  !*** ./src/services/InitPath.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// const dev = "/portalydev";
+// export default dev;
+const padrao = "/portaly";
+/* harmony default export */ __webpack_exports__["default"] = (padrao);
 
 /***/ }),
 
@@ -847,13 +1420,73 @@ function Routes() {
 __webpack_require__.r(__webpack_exports__);
 const WooCommerceRestApi = __webpack_require__(/*! @woocommerce/woocommerce-rest-api */ "./node_modules/@woocommerce/woocommerce-rest-api/index.mjs").default;
 
-const api = new WooCommerceRestApi({
+const Api = new WooCommerceRestApi({
   url: "https://demo.skeavee.com/portaly/",
   consumerKey: "ck_7b8470ceaba1db71afb0c3a77f7f1ea3f98b9ce0",
   consumerSecret: "cs_de262070deb1bcf2a2911dfb08af5fa991407f5e",
   version: "wc/v3"
 });
-/* harmony default export */ __webpack_exports__["default"] = (api);
+/* harmony default export */ __webpack_exports__["default"] = (Api);
+
+/***/ }),
+
+/***/ "./src/util/ApiWooCommerce.js":
+/*!************************************!*\
+  !*** ./src/util/ApiWooCommerce.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/api */ "./src/services/api.js");
+
+const funcoesApiWooCommerce = {
+  getAll: () => {
+    return _services_api__WEBPACK_IMPORTED_MODULE_0__["default"].get("products", {
+      per_page: 20
+    });
+  },
+  getAllCategorias: () => {
+    return _services_api__WEBPACK_IMPORTED_MODULE_0__["default"].get("products/categories");
+  },
+  getCategoria: id => {
+    return _services_api__WEBPACK_IMPORTED_MODULE_0__["default"].get("products", {
+      category: id
+    });
+  },
+  getOnSale: () => {
+    return _services_api__WEBPACK_IMPORTED_MODULE_0__["default"].get("products", {
+      on_sale: true
+    });
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (funcoesApiWooCommerce);
+
+/***/ }),
+
+/***/ "./src/util/Carrinho.js":
+/*!******************************!*\
+  !*** ./src/util/Carrinho.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const Carrinho = {
+  valor: 0,
+  itens: []
+};
+const funcoesCarrinho = {
+  setCarrinho: () => {
+    localStorage.getItem("carrinho") ? console.log() : localStorage.setItem("carrinho", JSON.stringify(Carrinho));
+  },
+  getValorCarrinho: () => {
+    return JSON.parse(localStorage.getItem("carrinho")).valor;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (funcoesCarrinho);
 
 /***/ }),
 
@@ -891,5 +1524,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\portalydev\wp-content\t
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

@@ -54,23 +54,94 @@
     color: #623820;
 }
 
-#produtos-list {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
+.loading {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.produtos-list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 30px 10%;
+   width: 100%;
 }
 
 .produto {
-  border: 1px solid black;
-  display: block;
-  margin: 10px;
+   width: 205px;
+   display: block;
+   margin: 10px;
 }
+
+.produto .preco {
+   font-weight: 400;
+   font-size: medium;
+}
+
+.produto:hover {
+   /* background-color: rgba(0, 0, 0, 0.144); */
+   opacity: 45%;
+}
+
+.produto .nome {
+   font-weight: 400;
+   font-size: large;
+}
+
 .produto img {
-  width: 150px;
+   object-fit: contain;
+   height: 205px;
+   width: 205px;
+   display: block;
+   margin: 0 auto;
 }
 
+.produto-dados {
+   padding: 10px;
+   font-weight: bold;
+}
+#produto-pagina {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 100%;
+   padding: 30px;
+   min-height: calc(100vh - (259px + 231.219px));
+}
 
+.produtomostrado {
+   width: 500px;
+}
+
+.produtomostrado img.principal {
+   width: 500px;
+   height: 500px;
+   object-fit: contain;
+   display: block;
+   margin: 0 auto;
+}
+
+.quantidade-input {
+   width: 10px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   /* font-weight: 400; */
+}
+
+#homepage {
+   min-height: calc(100vh - (259px + 231.219px));
+   display: flex;
+   align-items: center;
+}
+
+ul {
+   list-style: none;
+}
 
 /*# sourceMappingURL=main.chunk.css.map*/
