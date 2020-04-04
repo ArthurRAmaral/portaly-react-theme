@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wp-content/themes/portaly-react-theme/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/portaly-react-theme/static/js/main.chunk.js",
+    "main.js.map": "/wp-content/themes/portaly-react-theme/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/portaly-react-theme/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/portaly-react-theme/static/js/bundle.js.map",
+    "static/css/2.chunk.css": "/wp-content/themes/portaly-react-theme/static/css/2.chunk.css",
+    "static/js/2.chunk.js": "/wp-content/themes/portaly-react-theme/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/wp-content/themes/portaly-react-theme/static/js/2.chunk.js.map",
+    "index.php": "/wp-content/themes/portaly-react-theme/index.php",
+    "precache-manifest.179f94cd1b573532d67483f75fd2f59a.js": "/wp-content/themes/portaly-react-theme/precache-manifest.179f94cd1b573532d67483f75fd2f59a.js",
+    "service-worker.js": "/wp-content/themes/portaly-react-theme/service-worker.js",
+    "static/css/2.chunk.css.map": "/wp-content/themes/portaly-react-theme/static/css/2.chunk.css.map",
+    "static/css/main.chunk.css.map": "/wp-content/themes/portaly-react-theme/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/wp-content/themes/portaly-react-theme/static/js/2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/css/2.chunk.css",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
